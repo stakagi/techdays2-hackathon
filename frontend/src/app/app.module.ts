@@ -5,7 +5,8 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatListModule,
-  MatCardModule
+  MatCardModule,
+  MatRippleModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -17,6 +18,7 @@ import { ListPageComponent } from './list-page/list-page.component';
 import { ViewerPageComponent } from './viewer-page/viewer-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

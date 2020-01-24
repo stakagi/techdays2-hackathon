@@ -1,0 +1,14 @@
+.page-container {
+    height: 100%;
+}
+
+.list-item {
+    transition: all .3s;
+}
+
+.list-item:hover {
+    background-color: #545454;
+    cursor: pointer;
+}
+
+img {max-width:100%;}
