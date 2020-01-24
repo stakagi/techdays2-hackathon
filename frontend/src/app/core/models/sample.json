@@ -1,0 +1,35 @@
+[
+    {
+        "team_name": "チーム2",
+        "thumbnail_url": "thumbnail_url",
+        "members": "メンバー一覧",
+        "movie_url": "movie_url",
+        "views": 0,
+        "team_id": "2",
+        "keyword": "キーワード",
+        "votes": 0,
+        "title": "タイトル（チーム2）"
+    },
+    {
+        "team_name": "チーム1",
+        "thumbnail_url": "https://techdays2-hackathon.s3.amazonaws.com/img_20200124_162832.jpg",
+        "members": "メンバー一覧",
+        "movie_url": "https://techdays2-hackathon.s3.amazonaws.com/img_20200124_162832.jpg",
+        "views": 0,
+        "team_id": "1",
+        "keyword": "キーワード",
+        "votes": 0,
+        "title": "タイトル（チーム1）"
+    },
+    {
+        "team_name": "チーム3",
+        "thumbnail_url": "thumbnail_url",
+        "members": "メンバー一覧",
+        "movie_url": "movie_url",
+        "views": 0,
+        "team_id": "3",
+        "keyword": "キーワード",
+        "votes": 0,
+        "title": "タイトル（チーム3）"
+    }
+]
