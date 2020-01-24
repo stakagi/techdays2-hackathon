@@ -4,6 +4,12 @@ service: techdays2-hackathon
 provider:
   name: aws
   runtime: nodejs12.x
+
+  iamRoleStatements:
+  - Effect: Allow
+    Action:
+      - dynamodb:*
+    Resource: "arn:aws:dynamodb:${self:provider.region}:*:table/*"
   
 resources:
   Resources:
@@ -12,10 +18,10 @@ resources:
       Properties:
         TableName: Teams
         AttributeDefinitions:
-          - AttributeName: teamId
+          - AttributeName: team_id
             AttributeType: S
         KeySchema:
-          - AttributeName: teamId
+          - AttributeName: team_id
             KeyType: HASH
         BillingMode: PAY_PER_REQUEST
 
@@ -24,16 +30,17 @@ resources:
       Properties:
         TableName: UserStatus
         AttributeDefinitions:
-          - AttributeName: teamId
+          - AttributeName: team_id
             AttributeType: S
-          - AttributeName: statusKey
+          - AttributeName: status_key
             AttributeType: S
         KeySchema:
-          - AttributeName: teamId
+          - AttributeName: team_id
             KeyType: HASH
-          - AttributeName: statusKey
+          - AttributeName: status_key
             KeyType: RANGE
         BillingMode: PAY_PER_REQUEST
+
 
 
 functions:
