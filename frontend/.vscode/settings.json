@@ -1,0 +1,12 @@
+{
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[html]": {
+        "editor.formatOnSave": true,
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+    },
+}
