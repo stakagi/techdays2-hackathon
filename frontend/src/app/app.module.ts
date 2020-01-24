@@ -4,7 +4,8 @@ import {
   MatToolbarModule,
   MatFormFieldModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatCardModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -34,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
