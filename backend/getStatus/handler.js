@@ -46,15 +46,20 @@ module.exports.main = async event => {
         }
       }
     ).promise();
+    var good = 0
+    var view = 0
     
-    console.log("good: "+queryDynamoDBGood.Items.count +" view: "+queryDynamoDBView.Items.count)
+    var good_res = JSON.parse(JSON.stringify(queryDynamoDBGood.Items))
+    var view_res = JSON.parse(JSON.stringify(queryDynamoDBView.Items))
+    console.log("good_res: "+ good_res)
+    console.log("view_res: "+ view_res)
+    console.log("good: "+good_res.value +" view: "+view_res.value)
     
-    var good = 0 
-    var view = 0 
-    if(queryDynamoDBGood.Items.value){
+  
+    if(good_res.value){
       good = 1
     }
-    if(queryDynamoDBView.Items.value){
+    if(good_res.value){
       view = 1
     }
     var body = {
