@@ -1,4 +1,21 @@
 <mat-toolbar color="primary">
   <span>リストページ</span>
 </mat-toolbar>
-<div></div>
+<div fxLayout="row" fxLayoutAlign="center start">
+  <div fxFlex="640px">
+    <ng-container *ngFor="let item of teams">
+      <div
+        fxLayout="row"
+        fxLayoutGap="16px"
+        class="list-item"
+        matRipple
+        (click)="select(item.teamId)"
+      >
+        <span fxFlex>
+          <img [src]="item.thumbnailUrl" alt="img" />
+        </span>
+        <h3 fxFlex>{{ item.teamName }}</h3>
+      </div>
+    </ng-container>
+  </div>
+</div>
