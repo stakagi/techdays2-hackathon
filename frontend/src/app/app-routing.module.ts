@@ -8,7 +8,8 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'list', component: ListPageComponent },
-  { path: 'viewer/:teamId', component: ViewerPageComponent },
+  //  { path: 'viewer/:teamId', component: ViewerPageComponent },
+  { path: 'viewer', component: ViewerPageComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: NotFoundPageComponent }
 ];
